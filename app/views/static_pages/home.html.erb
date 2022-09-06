@@ -1,0 +1,10 @@
+<h1>Welcome to the Demo</h1>
+
+<section>
+  <div data-reflex-root="[forward],[backward]">
+    <input type="text" data-reflex="keyup->Example#words" placeholder="Type something">
+    <div forward>Forwards: <%= @words %></div>
+    <div backward>Bacwards: <%= @words&.reverse %></div>
+  </div>
+</section>
+

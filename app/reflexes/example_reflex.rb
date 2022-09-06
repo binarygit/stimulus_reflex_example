@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 class ExampleReflex < ApplicationReflex
+
+  def words
+    @words = element[:value]
+  end
   # Add Reflex methods in this file.
   #
   # All Reflex instances include CableReady::Broadcaster and expose the following properties:
